@@ -334,7 +334,7 @@ properties are passed to the log engine's constructor as an array. ::
             // ...
         }
 
-        public function log($level, string $message, array $context = [])
+        public function log($level, string|\Stringable $message, array $context = []): void {
         {
             // Write to the database.
         }
